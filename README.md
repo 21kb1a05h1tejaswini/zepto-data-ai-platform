@@ -1,11 +1,19 @@
-# Zepto Data & AI Platform
+# Zepto Data & AI Platform (Capstone Submission)
 
-## Project Overview
-This repository implements an end-to-end AI/ML platform covering:
-1. `/data_pipeline`: Raw scraping, currency enrichment (1 GBP = 105.50 INR baseline), normalized SQLite storage, and SQL/pandas parity verification.
-2. `/analytics`: Profiling, EDA, outlier and skewness detection, stratified predictive classification, imbalance handling comparison, hyperparameter tuning with OOB score, fare regression, and a serialized end-to-end pipeline. Includes committed fallback `titanic.csv`.
-3. `/support_assistant`: Vector ingestion into ChromaDB with `all-MiniLM-L6-v2`, LangGraph deterministic policy routing, Pydantic structured output, and containerized FastAPI `/ask` endpoint.
+A unified platform combining an automated data scraping pipeline, predictive machine learning analytics, and a LangGraph-orchestrated GenAI customer support microservice.
 
-## Setup & Installation
+---
+
+## 1. Environment Setup
+
+All modules share a single consolidated dependencies file at the repository root:
+
 ```bash
+git clone [https://github.com/21kb1a05h1tejaswini/zepto-data-ai-platform.git](https://github.com/21kb1a05h1tejaswini/zepto-data-ai-platform.git)
+
+or
+
+git clone https://github.com/21kb1a05h1tejaswini/zepto-data-ai-platform.git
+
+cd zepto-data-ai-platform
 pip install -r requirements.txt
